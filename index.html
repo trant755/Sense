@@ -28,15 +28,27 @@
           <div class="nav-bar__nav-wrap">
             <nav class="nav-bar__nav-list">
               <li class="nav-bar__nav-item">
-                <a href="#about" class="nav-bar__nav-link">Про нас</a>
+                <a
+                  href="#about"
+                  class="nav-bar__nav-link nav-bar__nav-link--anchor"
+                  >Про нас</a
+                >
               </li>
               <li class="nav-bar__nav-item">
-                <a href="#services" class="nav-bar__nav-link">Послуги</a>
+                <a
+                  href="#services"
+                  class="nav-bar__nav-link nav-bar__nav-link--anchor"
+                  >Послуги</a
+                >
               </li>
               <li class="nav-bar__nav-item">
-                <a href="#contacts" class="nav-bar__nav-link">Контакти</a>
+                <a
+                  href="#contacts"
+                  class="nav-bar__nav-link nav-bar__nav-link--anchor"
+                  >Контакти</a
+                >
               </li>
-              <li class="nav-bar__nav-item">
+              <li class="nav-bar__nav-item nav-bar__nav-item--sign-up">
                 <a href="https://b828575.alteg.io/" class="nav-bar__nav-link"
                   >Записатись
                   <svg
@@ -63,28 +75,59 @@
     <main>
       <section class="hero">
         <h1 class="visually-hidden">Простір SENSE</h1>
-        <div class="container">
-          <div class="hero__image-wrapper"></div>
+        <div class="container hero__container">
+          <div class="hero__image-wrapper">
+            <img
+              src="images/foto-hero-1.png"
+              alt="hero"
+              class="hero__image hero__image--1"
+              width="100%"
+            />
+            <img
+              src="images/foto-hero-2.png"
+              alt="hero"
+              class="hero__image hero__image--2"
+              width="100%"
+            />
+            <img
+              src="images/foto-hero-3.png"
+              alt="hero"
+              class="hero__image hero__image--3"
+              width="100%"
+            />
+            <img
+              src="images/svg/sense.svg"
+              alt="hero"
+              class="hero__image hero__image--sense"
+              width="100%"
+            />
+            <img
+              src="images/svg/beauty.svg"
+              alt="hero"
+              class="hero__image hero__image--beauty"
+              width="100%"
+            />
+          </div>
         </div>
       </section>
 
       <section id="about" class="about">
         <div class="container">
-          <h1 class="visually-hidden">Про нас</h1>
+          <h2 class="visually-hidden">Про нас</h2>
           <div class="about__text-wrap">
             <h2 class="about__title">About us:</h2>
             <p class="about__text">
-              <span>
+              <span class="about__text-span">
                 Простір SENSE — це не просто місце, де ви можете трансформувати
                 свій зовнішній вигляд, це куточок, де ваші бажання стають
                 реальністю з вишуканістю та увагою до деталей.
               </span>
-              <span>
+              <span class="about__text-span">
                 Наша команда талановитих стилістів, наповнена останніми
                 тенденціями у світі краси, готова перетворити ваші мрії на
                 реальність.
               </span>
-              <span>
+              <span class="about__text-span">
                 Ми пропонуємо не просто послуги, а справжні тренди краси, які
                 турбуються про ваш внутрішній та зовнішній стан від голови до
                 п'ят.
@@ -94,13 +137,13 @@
         </div>
       </section>
 
-      <section class="categories">
-        <h1 class="visually-hidden">Категорії послуг</h1>
+      <section id="services" class="categories">
+        <h2 class="visually-hidden">Категорії послуг</h2>
 
         <div class="container categories__container">
           <ul class="categories__list">
             <li class="categories__item">
-              <a href="#" class="categories__link">
+              <a href="#" data-category="hair" class="categories__link">
                 <img
                   src="images/svg/hair.svg"
                   alt="face"
@@ -110,17 +153,17 @@
               </a>
             </li>
             <li class="categories__item">
-              <a href="#" class="categories__link">
+              <a href="#" data-category="makeup" class="categories__link">
                 <img
                   src="images/svg/make-up.svg"
                   alt="hair"
                   class="categories__icon"
                 />
-                <span class="categories__text">Make-uo/Eyelashes</span>
+                <span class="categories__text">Make-up/Eyelashes</span>
               </a>
             </li>
             <li class="categories__item">
-              <a href="#" class="categories__link">
+              <a href="#" data-category="eyebrows" class="categories__link">
                 <img
                   src="images/svg/eyebrows.svg"
                   alt="nails"
@@ -130,7 +173,7 @@
               </a>
             </li>
             <li class="categories__item">
-              <a href="#" class="categories__link">
+              <a href="#" data-category="nails" class="categories__link">
                 <img
                   src="images/svg/nails.svg"
                   alt="eyebrows"
@@ -145,9 +188,13 @@
 
       <section class="services">
         <div class="container">
-          <h1 class="visually-hidden">Усі наші послуги</h1>
+          <h2 class="visually-hidden">Усі наші послуги</h2>
           <div class="services__buttons-wrapper">
-            <button class="services__button">
+            <a
+              href="https://b828575.alteg.io/"
+              rel="noopener noreferrer"
+              class="services__button"
+            >
               Тицяй, щоб записатись
               <svg
                 width="20"
@@ -170,7 +217,7 @@
                   </clipPath>
                 </defs>
               </svg>
-            </button>
+            </a>
             <button class="services__button services__button--black accordion">
               <span>Тицяй, щоб побачити перелік послуг</span>
               <svg
@@ -191,7 +238,7 @@
           </div>
           <div class="services__wrap panel">
             <ul class="services__category-list">
-              <li class="services__category-item">
+              <li class="services__category-item" data-services="hair">
                 <h2 class="services__category-title">Волосся</h2>
                 <ul class="services__subcategory-list">
                   <li class="services__subcategory-item">
@@ -234,7 +281,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="services__category-item">
+              <li class="services__category-item" data-services="nails">
                 <h2 class="services__category-title">Нігті</h2>
                 <ul class="services__subcategory-list">
                   <li class="services__subcategory-item">
@@ -274,7 +321,7 @@
                     <ul class="services__list">
                       <li class="services__item">Частковий педикюр (пальці)</li>
                       <li class="services__item">Частковий педикюр (стопи)</li>
-                      <li class="services__item">Комплекс педирюр</li>
+                      <li class="services__item">Комплекс педикюр</li>
                       <li class="services__item">Зняття, педикюр, покриття</li>
                       <li class="services__item">Чоловічий педикюр</li>
                       <li class="services__item">Стопи + пальці</li>
@@ -284,7 +331,7 @@
               </li>
             </ul>
             <ul class="services__category-list">
-              <li class="services__category-item">
+              <li class="services__category-item" data-services="eyebrows">
                 <h2 class="services__category-title">Брови</h2>
                 <ul class="services__subcategory-list">
                   <li class="services__subcategory-item">
@@ -302,7 +349,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="services__category-item">
+              <li class="services__category-item" data-services="makeup">
                 <h2 class="services__category-title">Make up та вії</h2>
                 <ul class="services__subcategory-list">
                   <li class="services__subcategory-list-item">
@@ -333,7 +380,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer id="contacts" class="footer">
       <div class="container footer__container">
         <div class="footer__wrap">
           <div class="footer__contacts-wrap">

@@ -827,12 +827,13 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   gap: 32px;
 
   @media screen and (min-width: 767px) {
     flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -878,17 +879,19 @@ body {
   align-items: flex-start;
 
   margin-top: auto !important;
-
+  margin-left: -8px !important;
   gap: 24px;
 
   @media screen and (min-width: 767px) {
+    margin-left: 0;
   }
 }
 
 .footer__rights {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+
   justify-content: space-between;
 
   width: 100%;
@@ -897,16 +900,17 @@ body {
   font-weight: 400;
 
   @media screen and (min-width: 767px) {
+    align-items: center;
+
     flex-direction: row;
     font-size: 16px;
   }
 }
 
 .sense-comand {
-  padding-left: 8px;
-  text-align: center;
+  text-align: start;
 
   @media screen and (min-width: 767px) {
-    text-align: start;
+    padding-left: 8px;
   }
 }

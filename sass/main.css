@@ -42,7 +42,7 @@ nav[class] {
 
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-  text-decoration-skip-ink: auto;
+          text-decoration-skip-ink: auto;
 }
 
 img {
@@ -298,13 +298,7 @@ body {
 .nav-bar {
   width: 100%;
   height: 35px;
-  background: linear-gradient(
-    90deg,
-    #e4e0d6 0%,
-    #e4e0d6 50%,
-    #fff 50%,
-    #fff 100%
-  );
+  background: linear-gradient(90deg, #e4e0d6 0%, #e4e0d6 50%, #fff 50%, #fff 100%);
 }
 @media screen and (min-width: 767px) {
   .nav-bar {
@@ -407,7 +401,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .nav-bar__nav-item--sign-up {
+  .nav-bar__nav-item.nav-bar__nav-item--sign-up {
     position: absolute;
     top: calc(100% + 35px);
     right: 21px;
@@ -609,7 +603,7 @@ body {
 
 /* first 2 elements */
 @media screen and (min-width: 767px) {
-  .categories__item:nth-child(-n + 2) {
+  .categories__item:nth-child(-n+2) {
     border-bottom: 1px solid #fff;
   }
 }
@@ -860,13 +854,14 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   gap: 32px;
 }
 @media screen and (min-width: 767px) {
   .footer__contacts-wrap {
     flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -913,12 +908,19 @@ body {
   flex-direction: row;
   align-items: flex-start;
   margin-top: auto !important;
+  margin-left: -8px !important;
   gap: 24px;
 }
+@media screen and (min-width: 767px) {
+  .footer__links-list {
+    margin-left: 0;
+  }
+}
+
 .footer__rights {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   width: 100%;
   font-size: 14px;
@@ -926,17 +928,17 @@ body {
 }
 @media screen and (min-width: 767px) {
   .footer__rights {
+    align-items: center;
     flex-direction: row;
     font-size: 16px;
   }
 }
 
 .sense-comand {
-  padding-left: 8px;
-  text-align: center;
+  text-align: start;
 }
 @media screen and (min-width: 767px) {
   .sense-comand {
-    text-align: start;
+    padding-left: 8px;
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

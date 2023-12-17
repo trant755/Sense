@@ -698,6 +698,10 @@ body {
   justify-content: flex-start;
   flex-direction: column;
   color: #656d76;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 .services__category-item {

@@ -128,173 +128,6 @@ body {
   }
 }
 
-.hero__container {
-  padding-left: 32px;
-  padding-right: 32px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (min-width: 767px) {
-  .hero__container {
-    padding-left: 106px;
-    padding-right: 106px;
-  }
-}
-
-.hero__image-wrapper {
-  width: 100%;
-  height: 192px;
-  position: relative;
-}
-@media screen and (min-width: 767px) {
-  .hero__image-wrapper {
-    height: 317px;
-  }
-}
-@media screen and (min-width: 1023px) {
-  .hero__image-wrapper {
-    height: 464px;
-  }
-}
-@media screen and (min-width: 1279px) {
-  .hero__image-wrapper {
-    height: 610px;
-  }
-}
-
-.hero__image {
-  position: absolute;
-  opacity: 0;
-}
-
-.hero__image-wrapper::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  z-index: 10;
-  background-color: #e4e0d6;
-  opacity: 0.1;
-}
-
-.hero__image--1 {
-  bottom: 0px;
-  left: 0;
-  width: 30.4%;
-  animation: fadeInFoto 500ms ease-in-out 1200ms forwards;
-}
-@media screen and (min-width: 1279px) {
-  .hero__image--1 {
-    bottom: 0;
-    left: 0;
-    width: 30.4%;
-  }
-}
-
-.hero__image--2 {
-  top: 0;
-  left: 101px;
-  width: 39.9%;
-  animation: fadeInFoto 500ms ease-in-out 1400ms forwards;
-}
-@media screen and (min-width: 767px) {
-  .hero__image--2 {
-    left: 180px;
-  }
-}
-@media screen and (min-width: 1023px) {
-  .hero__image--2 {
-    top: 0;
-    left: 263px;
-    width: 39.9%;
-  }
-}
-@media screen and (min-width: 1279px) {
-  .hero__image--2 {
-    top: 0;
-    left: 345px;
-    width: 39.9%;
-  }
-}
-
-.hero__image--3 {
-  top: 53px;
-  right: 0;
-  width: 25.7%;
-  animation: fadeInFoto 500ms ease-in-out 1600ms forwards;
-}
-@media screen and (min-width: 1023px) {
-  .hero__image--3 {
-    top: 110px;
-    right: 0;
-    width: 25.7%;
-  }
-}
-@media screen and (min-width: 1279px) {
-  .hero__image--3 {
-    top: 95px;
-    right: 0;
-    width: 25.7%;
-  }
-}
-
-.hero__image--sense {
-  top: 23px;
-  left: 32px;
-  width: 33.5%;
-  z-index: 11;
-  animation: fadeInLogoLeft 600ms ease-in-out 1800ms forwards;
-}
-@media screen and (min-width: 767px) {
-  .hero__image--sense {
-    top: 23px;
-    left: 59px;
-  }
-}
-@media screen and (min-width: 1023px) {
-  .hero__image--sense {
-    top: 23px;
-    left: 68px;
-  }
-}
-@media screen and (min-width: 1279px) {
-  .hero__image--sense {
-    top: 32px;
-    left: 112px;
-  }
-}
-
-.hero__image--beauty {
-  bottom: 17px;
-  right: 35px;
-  width: 31.5%;
-  z-index: 11;
-  animation: fadeInLogoRight 600ms ease-in-out 1800ms forwards;
-}
-@media screen and (min-width: 767px) {
-  .hero__image--beauty {
-    bottom: 14px;
-    right: 70px;
-  }
-}
-@media screen and (min-width: 1023px) {
-  .hero__image--beauty {
-    bottom: 21px;
-    right: 133px;
-  }
-}
-@media screen and (min-width: 1279px) {
-  .hero__image--beauty {
-    bottom: 21px;
-    right: 174px;
-  }
-}
-
 .nav-bar {
   width: 100%;
   height: 35px;
@@ -449,11 +282,193 @@ body {
   height: 18px;
 }
 
-/* Hero */
 .hero {
   padding-top: 32px;
   padding-bottom: 32px;
   background-color: #e4e0d6;
+}
+@media screen and (min-width: 767px) {
+  .hero {
+    min-height: 517px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .hero {
+    min-height: 664px;
+  }
+}
+@media screen and (min-width: 1279px) {
+  .hero {
+    min-height: 810px;
+  }
+}
+
+.hero__container {
+  padding-left: 32px;
+  padding-right: 32px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 767px) {
+  .hero__container {
+    padding-left: 106px;
+    padding-right: 106px;
+    min-height: 417px;
+  }
+}
+
+.hero__image-wrapper {
+  width: 100%;
+  height: 192px;
+  position: relative;
+}
+@media screen and (min-width: 767px) {
+  .hero__image-wrapper {
+    height: 317px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .hero__image-wrapper {
+    height: 464px;
+  }
+}
+@media screen and (min-width: 1279px) {
+  .hero__image-wrapper {
+    height: 610px;
+  }
+}
+
+.hero__image {
+  position: absolute;
+  opacity: 0;
+}
+
+.hero__image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 10;
+  background-color: #e4e0d6;
+  opacity: 0.1;
+}
+
+.hero__image--1 {
+  bottom: 0px;
+  left: 0;
+  width: 30.4%;
+  animation: fadeInFoto 500ms ease-in-out 1200ms forwards;
+}
+@media screen and (min-width: 1279px) {
+  .hero__image--1 {
+    bottom: 0;
+    left: 0;
+    width: 30.4%;
+  }
+}
+
+.hero__image--2 {
+  top: 0;
+  left: 101px;
+  width: 39.9%;
+  animation: fadeInFoto 500ms ease-in-out 1400ms forwards;
+}
+@media screen and (min-width: 767px) {
+  .hero__image--2 {
+    left: 180px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .hero__image--2 {
+    top: 0;
+    left: 263px;
+    width: 39.9%;
+  }
+}
+@media screen and (min-width: 1279px) {
+  .hero__image--2 {
+    top: 0;
+    left: 345px;
+    width: 39.9%;
+  }
+}
+
+.hero__image--3 {
+  top: 53px;
+  right: 0;
+  width: 25.7%;
+  animation: fadeInFoto 500ms ease-in-out 1600ms forwards;
+}
+@media screen and (min-width: 1023px) {
+  .hero__image--3 {
+    top: 110px;
+    right: 0;
+    width: 25.7%;
+  }
+}
+@media screen and (min-width: 1279px) {
+  .hero__image--3 {
+    top: 95px;
+    right: 0;
+    width: 25.7%;
+  }
+}
+
+.hero__image--sense {
+  top: 23px;
+  left: 32px;
+  width: 33.5%;
+  z-index: 11;
+  animation: fadeInLogoLeft 600ms ease-in-out 1800ms forwards;
+}
+@media screen and (min-width: 767px) {
+  .hero__image--sense {
+    top: 23px;
+    left: 59px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .hero__image--sense {
+    top: 23px;
+    left: 68px;
+  }
+}
+@media screen and (min-width: 1279px) {
+  .hero__image--sense {
+    top: 32px;
+    left: 112px;
+  }
+}
+
+.hero__image--beauty {
+  bottom: 17px;
+  right: 35px;
+  width: 31.5%;
+  z-index: 11;
+  animation: fadeInLogoRight 600ms ease-in-out 1800ms forwards;
+}
+@media screen and (min-width: 767px) {
+  .hero__image--beauty {
+    bottom: 14px;
+    right: 70px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .hero__image--beauty {
+    bottom: 21px;
+    right: 133px;
+  }
+}
+@media screen and (min-width: 1279px) {
+  .hero__image--beauty {
+    bottom: 21px;
+    right: 174px;
+  }
 }
 
 /* About */
